@@ -40,7 +40,7 @@ app.get('/weather', (req, res) =>{
             'error': 'You must provide an address' 
         }) 
     } 
-    geoLocation(req.query.address,({latitude,longitude,place}, error) =>{
+    geoLocation(req.query.address,({latitude,longitude,place}={}, error) =>{
         if(error){ 
             return res.send({ 
                 'error': error 
