@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs"
   },
   "author": "Ranu Jain",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.0.6",
-    "nodemon": "^1.19.4",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.0"
   }
 }
